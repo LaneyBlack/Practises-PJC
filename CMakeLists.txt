@@ -13,5 +13,8 @@ add_executable(c2ex2 c2/ex2.cpp)
 add_executable(c2ex3 c2/ex3.cpp)
 add_executable(c2ex4 c2/ex4.cpp)
 add_executable(c2ex5 c2/ex5.cpp)
+add_executable(c3starter c3/starter.cpp)
+add_executable(c3ex1 c3/ex1.cpp)
+add_executable(c3ex1 c3/ex2.cpp)
 
 add_executable(test test/test1.cpp)
