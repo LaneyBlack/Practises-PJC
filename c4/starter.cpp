@@ -12,9 +12,9 @@ void minMaxRep(int a[], size_t size, int &mn, size_t *&in, int **mx, size_t *ix)
     }
     for (int i = 0; i < size; ++i) {
         if (mn == a[i])
-            *in++;
+            (*in)++;
         else if (**mx == a[i])
-            *ix++;
+            (*ix)++;
     }
 }
 
