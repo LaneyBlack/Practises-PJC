@@ -13,9 +13,19 @@ add_executable(c2ex2 c2/ex2.cpp)
 add_executable(c2ex3 c2/ex3.cpp)
 add_executable(c2ex4 c2/ex4.cpp)
 add_executable(c2ex5 c2/ex5.cpp)
+
 add_executable(c3starter c3/starter.cpp)
 add_executable(c3ex1 c3/ex1.cpp)
 add_executable(c3ex2 c3/ex2.cpp)
 add_executable(c3ex3 c3/ex3.cpp)
+
+add_executable(c4starter c4/starter.cpp)
+add_executable(c4ex1 c4/ex1.cpp)
+add_executable(c4ex2 c4/ex2.cpp)
+add_executable(c4ex3 c4/ex3.cpp)
+add_executable(c4ex3-1 c4/ex3-1.cpp)
+
+add_executable(c5starter c5/starter.cpp)
+add_executable(c5ex1 c5/ex1.cpp)
 
 add_executable(test test/test1.cpp)
