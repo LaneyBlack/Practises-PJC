@@ -26,7 +26,7 @@ char *reverse(char *cstr) {
 size_t words(const char *cstr) {
     size_t wordCount = 0;
     bool space = isLetter(cstr[0]), onWord = isLetter(cstr[0]);
-    for (int i = 0; i < length(cstr); ++i)
+    for (int i = 0; i < length(cstr); i++)
         if (cstr[i] == ' ') {
             if (onWord) {
                 onWord = false;
