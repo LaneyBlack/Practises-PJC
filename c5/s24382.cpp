@@ -33,17 +33,18 @@ size_t countMinNumbers(int a[], size_t size) {
 }
 
 size_t countMinNumbers(vector<int> a, size_t size) {
-    int minNumber = a[0];
-    size_t minNumberCount = 1;
-    for (int i = 1; i < size; ++i) {
-        if (a[i] < minNumber) {
-            minNumber = a[i];
-            minNumberCount = 1;
-        } else if (minNumber == a[i]) {
-            minNumberCount++;
-        }
-    }
-    return minNumberCount;
+    return countMinNumbers(a.data(), size);
+//    int minNumber = a[0];
+//    size_t minNumberCount = 1;
+//    for (int i = 1; i < size; ++i) {
+//        if (a[i] < minNumber) {
+//            minNumber = a[i];
+//            minNumberCount = 1;
+//        } else if (minNumber == a[i]) {
+//            minNumberCount++;
+//        }
+//    }
+//    return minNumberCount;
 }
 
 size_t getBiggestIndex(vector<int> a) {
