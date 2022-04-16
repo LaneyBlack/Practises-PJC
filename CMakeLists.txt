@@ -26,5 +26,7 @@ add_executable(c4ex3 c4/ex3.cpp)
 
 add_executable(c5starter c5/s24382.cpp)
 add_executable(c5ex1 c5/ex1.cpp)
+add_executable(c5ex2 c5/ex2.cpp)
+add_executable(c5ex3 c5/ex3.cpp)
 
 add_executable(test test/test1.cpp)
