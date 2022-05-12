@@ -36,10 +36,13 @@ add_executable(c6ex1 c6/ex1.cpp)
 add_executable(c6ex2 c6/ex2.cpp)
 add_executable(c6ex3 c6/ex3.cpp)
 
-add_executable(c7starter c7/s24382.cpp)
-add_executable(c7ex1 c7/ex1.cpp)
-add_executable(c7ex2 c7/ex2.cpp)
+add_executable(c7starter c7-c8/s24382.cpp)
+add_executable(c7ex1 c7-c8/ex1.cpp)
+add_executable(c7ex2 c7-c8/ex2.cpp)
+add_executable(c8ex1 c7-c8/ex3.cpp)
+add_executable(c7ex1pz c7-c8/przykladowe/ex1.cpp)
+add_executable(c7ex2pz c7-c8/przykladowe/ex2.cpp)
 
-add_executable(c8starter c8/s24382.cpp)
+add_executable(c8starter c9/s24382.cpp)
 
 add_executable(test test/test1.cpp)

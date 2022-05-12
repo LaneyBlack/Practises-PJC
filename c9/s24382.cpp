@@ -2,13 +2,16 @@
 #include <cmath>
 #include "vector"
 
+//s24382
+
 using namespace std;
 
-class smth {
-    smth() {
-    }
+struct str {
+    int x;
+    int y;
 };
 
 int main(){
+    str r = {1,2};
     return 0;
 }
