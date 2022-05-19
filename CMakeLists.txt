@@ -44,5 +44,10 @@ add_executable(c7ex1pz c7-c8/przykladowe/ex1.cpp)
 add_executable(c7ex2pz c7-c8/przykladowe/ex2.cpp)
 
 add_executable(c9starter c9/s24382.cpp)
+add_executable(c9ex1 c9/ex1.cpp)
+add_executable(c9ex2 c9/ex2.cpp)
+add_executable(c9ex3 c9/ex3.cpp)
+
+add_executable(c10starter c10/s24382.cpp)
 
 add_executable(test test/test1.cpp)
