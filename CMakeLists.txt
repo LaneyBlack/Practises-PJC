@@ -43,6 +43,6 @@ add_executable(c8ex1 c7-c8/ex3.cpp)
 add_executable(c7ex1pz c7-c8/przykladowe/ex1.cpp)
 add_executable(c7ex2pz c7-c8/przykladowe/ex2.cpp)
 
-add_executable(c8starter c9/s24382.cpp)
+add_executable(c9starter c9/s24382.cpp)
 
 add_executable(test test/test1.cpp)
