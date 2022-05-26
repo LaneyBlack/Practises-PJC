@@ -49,5 +49,10 @@ add_executable(c9ex2 c9/ex2.cpp)
 add_executable(c9ex3 c9/ex3.cpp)
 
 add_executable(c10starter c10/s24382.cpp)
+add_executable(c10ex1 c10/ex1.cpp)
+add_executable(c10ex2 c10/ex2.cpp)
+
+add_executable(c11starter c11/s24382.cpp)
+
 
 add_executable(test test/test1.cpp)
