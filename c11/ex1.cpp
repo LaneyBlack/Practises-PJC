@@ -104,6 +104,7 @@ int main() {
         new Boat ("Whale 12", 2016, "gigantic ship", 300),
         new Amphibian("Crocodile", 2020, "regular sized ship", 80, "Green", 6)
     });
+    
     for (int i = 0; i < vec.size(); ++i) {
         vec[i]->show();
         cout << endl;

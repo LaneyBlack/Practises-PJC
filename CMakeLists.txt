@@ -53,7 +53,8 @@ set(CMAKE_CXX_STANDARD 23)
 #add_executable(c10ex2 c10/ex2.cpp)
 
 #add_executable(c11starter c11/s24382.cpp)
-add_executable(c11ex1 c11/ex1.cpp)
+#add_executable(c11ex1 c11/ex1.cpp)
 
+add_executable(c12starter c12/s24382.cpp)
 
 #add_executable(test test/test1.cpp)
