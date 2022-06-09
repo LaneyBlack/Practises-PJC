@@ -1,0 +1,3 @@
+C:/PJATK/PJC/Cwiczenia/c12/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/PJATK/PJC/Cwiczenia/c12/cmake-build-debug/CMakeFiles/c12starter.dir
+C:/PJATK/PJC/Cwiczenia/c12/cmake-build-debug/CMakeFiles/rebuild_cache.dir
