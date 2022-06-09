@@ -3,83 +3,63 @@
 //s24382
 using namespace std;
 
-class Segment {
-    double A, B;
+class LiczbaZespolona {
+    double positive, negative;
 public:
-    Segment(double A, double B) : A(A), B(B) {}
-
-    friend Segment operator*(Segment seg, double i);
-
-    friend Segment operator*(double i, Segment seg);
-
-    friend Segment operator/(Segment seg, double i);
-
-    friend Segment operator-(Segment seg, double i);
-
-    friend Segment operator+(Segment seg, double i);
-
-    friend Segment operator+(double i, Segment);
-
-    friend std::ostream &operator<<(std::ostream &stream, const Segment m);
-
-    friend Segment operator+(Segment seg, Segment i);
-
-    bool operator()(double i) {
-        if (i > this->A && i < this->B)
-            return true;
-        else
-            return false;
+    LiczbaZespolona (){
+        positive = 0;
+        negative = 0;
     }
+
+    LiczbaZespolona(double value) {
+        if (value > 0){
+            positive = value;
+            negative = -value;
+        } else {
+            positive = -value;
+            negative = value;
+        }
+    }
+
+    friend LiczbaZespolona operator+(LiczbaZespolona liczba, double i);
+    friend LiczbaZespolona operator+(double i, LiczbaZespolona liczba);
+    friend LiczbaZespolona operator+(LiczbaZespolona liczba1, LiczbaZespolona liczba2);
+
+    friend std::ostream &operator<<(std::ostream &stream, const LiczbaZespolona liczba);
 };
 
-Segment operator*(Segment seg, double i) {
-    seg.A *= i;
-    seg.B *= i;
-    return seg;
+LiczbaZespolona operator+(LiczbaZespolona liczba, double i) {
+    liczba.positive += i;
+    liczba.negative += i;
+    return liczba;
 }
 
-Segment operator*(double i, Segment seg) {
-    seg.A *= i;
-    seg.B *= i;
-    return seg;
+LiczbaZespolona operator+(double i, LiczbaZespolona liczba) {
+    liczba.positive += i;
+    liczba.negative += i;
+    return liczba;
 }
 
-Segment operator/(Segment seg, double i) {
-    seg.A /= i;
-    seg.B /= i;
-    return seg;
+LiczbaZespolona operator+(LiczbaZespolona liczba1, LiczbaZespolona liczba2) {
+    LiczbaZespolona result;
+    result.positive = liczba1.positive + liczba2.positive;
+    result.negative = liczba1.negative + liczba2.negative;
+    return result;
 }
 
-Segment operator-(Segment seg, double i) {
-    seg.A -= i;
-    seg.B -= i;
-    return seg;
-}
-
-Segment operator+(Segment seg, double i) {
-    seg.A += i;
-    seg.B += i;
-    return seg;
-}
-
-Segment operator+(double i, Segment seg) {
-    seg.A += i;
-    seg.B += i;
-    return seg;
-}
-
-Segment operator+(Segment seg, Segment i) {
-    return *(new Segment((std::min(seg.A, i.A)), std::max(seg.B, i.B)));
-}
-
-std::ostream &operator<<(std::ostream &stream, const Segment m) {
-    return stream << "[" << m.A << "," << m.B << "]";
+std::ostream &operator<<(std::ostream &stream, const LiczbaZespolona liczba) {
+    return stream << "Liczba: [Positive " << liczba.positive << ", Negative " << liczba.negative << "]";
 }
 
 int main() {
-    Segment seg{2, 3}, s = 1 + 2 * ((seg - 2) / 2 + seg) / 3;
-    cout << s << endl << boolalpha;
-    for (double x = 0.5; x < 4; x += 1)
-        cout << "x=" << x << ": " << s(x) << endl;
+    LiczbaZespolona val1(2);
+    cout  << "Zespolona 2 --- " << val1 << endl;
+    cout << "2 + zespolona 2 --- "<< 2+ val1 << endl;
+    cout << "Zespolona 2 + (-2) --- "<< val1 + (-2) << endl;
+    LiczbaZespolona val2 (-5.5);
+    cout << "-------------" << endl;
+    cout  << "Zespolona 2 --- " << val1 << endl;
+    cout << "Zespolona 5.5 --- "<< val2 << endl;
+    cout << "Zespolona 5.5 + zespolona 2 --- "<< val1 + val2 << endl;
 }
 
